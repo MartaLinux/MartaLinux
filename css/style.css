@@ -88,6 +88,7 @@ body {
 .container-left {
     align-items: flex-start;
 }
+.about-img-container-percent{}
 
 .section-title {
     font-weight: bold;
@@ -335,7 +336,7 @@ body {
     text-align: left;
     position: relative;
     box-sizing: border-box;
-    height: 85%;
+    height: 89%;
 }
 
 .project-modal-scrollable {
