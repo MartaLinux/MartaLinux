@@ -482,8 +482,10 @@ body {
 }
 
 .front-page-my-photo {
-    width: 100px;
+    width: 100%;
     margin-bottom: 20px;
+    
+    
 }
 .front-page-about-me-container{
     display: flex;
@@ -1087,9 +1089,11 @@ body {
    }
    .front-page-profession-part1{
        margin-right: 30px;
+       color:#30cefb;
    }
    .front-page-profession-part2{
-        margin-left: 40px;
+        margin-left: 20px;
+        color:#30cefb;
    }
    .front-page-description{
     font-size: 17px;
@@ -1435,7 +1439,7 @@ body {
         position: absolute;
         width: 256px;
         right: 40px;
-        bottom: 400px;
+        /*bottom: 400px;*/
     
     }
     .front-page{
