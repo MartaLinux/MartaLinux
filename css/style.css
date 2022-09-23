@@ -1,6 +1,7 @@
 :root {
     /* background */
     --c-dark: #000c6c;
+    --c-black:black;
     --c-light: #ddf5ff;
     --c-accent: #30cefb;
     --c-dark-blue: #0d1430;
@@ -674,7 +675,7 @@ body {
     font-size: 17px;
     line-height: 150%;
     color: var(--c-dark);
-    margin: 0 0 30px 0;
+    margin: 13px 0 23px 176px;
 }
 
 .about-text:last-child {
@@ -2224,6 +2225,7 @@ body {
 
     .about-content-wrapper {
         position: relative;
+        justify-content: center;
     }
 
     .about .container {
@@ -2628,11 +2630,17 @@ body {
 
     .about-text {
         width: 406px;
+        
+        margin-top: 13px;
+        margin-right: 0px;
+        margin-bottom: 23px;
+        margin-left: 176px;
     }
 
     .about-text:last-child {
         width: 388px;
-        margin: 0;
+        margin:13px -3px 23px 176px;
+        
     }
 
     .about-content-wrapper {
