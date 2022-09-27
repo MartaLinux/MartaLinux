@@ -420,6 +420,103 @@ body {
 }
 
 
+
+/* my-logo */
+
+.logo{
+
+/* logo */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+gap: 10px;
+
+position: relative;
+width: 200px;
+height: 200px;
+}
+.logo-conteiner{
+    /* logo-conteiner */
+
+
+/* Auto layout */
+
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 10px;
+gap: 10px;
+
+width: 200px;
+height: 200px;
+
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.my-logo{
+    /* my-logo */
+
+
+box-sizing: border-box;
+
+/* Auto layout */
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: 76px 18px;
+
+width: 180px;
+height: 180px;
+
+background: linear-gradient(180deg, rgba(47, 42, 252, 0.91) 18.02%, #F5F5F5 51.35%, rgba(43, 12, 164, 0.7) 81.56%);
+border: 1px solid rgba(0, 0, 0, 0.5);
+box-shadow: 0px 4px 4px #F5F5F5;
+border-radius: 5px;
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+.text-logo{
+    /* Marta_{Dev} */
+
+
+width: 144px;
+height: 28px;
+
+font-family: 'Ubuntu';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+/* identical to box height */
+
+text-align: center;
+
+color: rgba(47, 42, 252, 0.91);
+
+text-shadow: 0px 10px 5px rgba(47, 42, 252, 0.32);
+
+/* Inside auto layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+}
+
 /*Navigation*/
 .logo-link {
     transition: var(--animation-transition);
@@ -526,11 +623,13 @@ body {
     line-height: 150%;
     text-align: center;
     color: var(--txt-c-light);
+    
     margin-bottom: 20px;
 }
 
 .front-page-gallery-btn {
     margin-bottom: 40px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .front-page-my-info {
@@ -566,6 +665,7 @@ body {
 
 .front-page-my-video-btn {
     padding: 10px 40px;
+    margin:40px;
     border: 2px solid var(--c-accent);
     box-sizing: border-box;
     background: transparent;
@@ -575,6 +675,7 @@ body {
     align-items: center;
     margin-bottom: 35px;
     cursor: pointer;
+    border-radius: 5px 5px 5px 5px;
     transition: var(--animation-transition);
 }
 
@@ -1442,6 +1543,9 @@ body {
         padding-bottom: 70px;
         min-width: 481px;
     }
+    .front-page{
+        background: linear-gradient(180deg, #2521a9 5%, #4a47a7 58.65%, #2b0ca4 94.06%);
+    }
 
     .mobile-element {
         display: none !important;
@@ -1498,6 +1602,7 @@ body {
         /* height: 175px; */
         margin-right: 35px;
         margin-bottom: 0;
+        border-radius: 5px 5px 5px 5px;
     }
 
     .front-page-about-me-container {
@@ -1579,6 +1684,7 @@ body {
     .personal-projects .container,
     .team-projects .container {
         align-items: normal;
+        background: linear-gradient(180deg, #2521a9 5%, #4a47a7 58.65%, #2b0ca4 94.06%);
     }
 
     .team-projects-title-bgd {
@@ -2185,6 +2291,7 @@ body {
 
     .front-page {
         padding-top: 10px;
+        background: linear-gradient(180deg, #2521a9 5%, #4a47a7 58.65%, #2b0ca4 94.06%);
 
     }
 
