@@ -559,7 +559,7 @@ flex-grow: 0;
     width: 30px;
     height: 30px;
     background-color: var(--c-accent);
-    display: block;
+    
     display: flex;
     justify-content: center;
     text-decoration: none;
@@ -1265,6 +1265,11 @@ flex-grow: 0;
     .tablet-element {
         display: none !important;
     }
+    .front-page{
+        background: linear-gradient(180deg, #2521a9 5%, #4a47a7 58.65%, #2b0ca4 94.06%) !important;
+    }
+
+
 
     .front-page-my-name {
         font-size: 36px;

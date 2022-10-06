@@ -37,7 +37,7 @@
                     <img src="./img/projects/sov.svg"style="width:60px">
                    
                 </a>
-                <div class="desktop-element">
+                <div class="d-none d-lg-block">
                 <div class="nav-menu ">
                         <a href="#about" class="mobile-menu-item">►ABOUT ME</a>
                         <a href="#projects" class="mobile-menu-item">►PROJECTS</a>
@@ -48,11 +48,9 @@
                 <div class="navigation-part" >
                     
                     <a href="#contacts" class="hire-me-btn">► CONTACTS ME</a>
-                    <a href="#mobile-menu" class="mobile-menu " id="mobile-menu-btn"><i class="fas fa-bars"></i></a>
-                    
-                    <div class="mobile-element tablet-element">
+                    <a href="#mobile-menu" class="mobile-menu d-flex d-lg-none" id="mobile-menu-btn"><i class="fas fa-bars"></i></a>
 
-                    </div>
+                    
                     
                     
                         
@@ -66,10 +64,10 @@
                     <i class="fas fa-play"></i>MY VIDEO
                     
                 </button>
-                <p class="front-page-my-descr mobile-element">About me in 1 minutes</p>
+                <p class="front-page-my-descr d-block d-md-none">About me in 1 minutes</p>
             </div>
             <div class="front-page-wrapper">
-                <img src="https://i.postimg.cc/g0DXXwS0/photo-2022-04-15-22-15-27.jpg" alt="photo-2022-04-15-22-15-27.jpg"  class="front-page-my-photo desktop-element" data-aos="fade-down" data-aos-delay="1000"/> 
+                <img src="https://i.postimg.cc/g0DXXwS0/photo-2022-04-15-22-15-27.jpg" alt="photo-2022-04-15-22-15-27.jpg"  class="front-page-my-photo d-none d-xl-block" data-aos="fade-down" data-aos-delay="1000"/> 
                 <div class="front-page-main-info">
                     
                     <h1 class="front-page-my-name">{Marta Tsyvanonok}<h1>
@@ -87,7 +85,7 @@
 
                 <div class="front-page-my-info">
                    
-                    <img src="https://i.postimg.cc/g0DXXwS0/photo-2022-04-15-22-15-27.jpg" alt="photo-2022-04-15-22-15-27.jpg" class="front-page-my-photo mobile-element tablet-element">
+                    <img src="https://i.postimg.cc/g0DXXwS0/photo-2022-04-15-22-15-27.jpg" alt="photo-2022-04-15-22-15-27.jpg" class="front-page-my-photo d-block d-xl-none ">
                     <div class="front-page-about-me-container "  data-aos="fade-left" data-aos-delay="1500">
                     </div>
                 
@@ -236,6 +234,7 @@
                 data-aos-delay="100" style="color: rgb(9, 14, 120);">More about my skills_</h2>
                 
             </div>
+            
 
             <div class="title  lh-base text-wrap bg-dark m-0" data-aos="flip-up" data-aos-delay="100" style="max-width:100px">
                 <p class="text-uppercase text-wrap  " style="color:white">
@@ -252,8 +251,8 @@
          <!--       
             
       
-            <div class="tablet-element desktop-element" data-aos="fade-right" data-aos-delay="500">
-              <h2 class="about-descr tablet-element">
+            <div class="d-none d-md-block d-xl-none d-none d-lg-block" data-aos="fade-right" data-aos-delay="500">
+              <h2 class="about-descr d-none d-md-block d-xl-none">
                 <span>{Python3}</span>
                 <span>OOP concept</span>
                 <span>JS,CSS,HTML,BOOTSTRAP5, C++, Corezoid, English</span>
@@ -261,7 +260,7 @@
             </div>
             
 
-            <div class="mobile-element">
+            <div class="d-block d-md-none">
                 <h4 class="about-descr mobile-primary">
                     <span>{Python3}</span>
                     <span>OOP concept</span>
@@ -304,7 +303,7 @@
                 
                 </p>
                 <!--
-                <p class="tablet-element">
+                <p class="d-none d-md-block d-xl-none">
                     /Python3_:<br />
                     I am good at using<br />
                     and importing standard <br />
@@ -325,7 +324,7 @@
                     visualization and analysis.
                 </p>
 
-                <p class="mobile-element text-lovercase text-sm ">
+                <p class="d-block d-md-none text-lovercase text-sm ">
                     /Python3_:<br />
                     I am good at using<br />
                     and importing standard <br />
@@ -355,12 +354,12 @@
                     
                 </div>
                 -->
-                <!--<p class="tablet-element">/ JavaScript, CSS, HTML:_<br />
+                <!--<p class="d-none d-md-block d-xl-none">/ JavaScript, CSS, HTML:_<br />
                     I know the syntax, how functions and methods work in JavaScript.<br />
                     Wrote projects using <br />
                     HTML, CSS, JavaScript.</p>
 
-                <p class="mobile-element text-sm">
+                <p class="d-block d-md-none text-sm">
                     / JavaScript, CSS, HTML:_<br />
                     I know the syntax, how functions and methods work in JavaScript.<br />
                     Wrote projects using <br />
@@ -431,7 +430,7 @@
           
         </div>
         </div>   
-        
+        </div>
     </section>
     <!--Projects-->
     <section class="personal-projects" id="projects">
@@ -717,13 +716,13 @@
                 <p class="footer-style-dark">✅   Linkdin </p>
                 <p class="footer-style-light">★{Marta_Dev}★</p>
 
-                <a href="tel:+380931068492" class="footer-phone footer-style-dark mobile-element">
+                <a href="tel:+380931068492" class="footer-phone footer-style-dark d-block d-md-none">
                     +38 (063) 532 13 77
                 </a>
-                <a href="mailto:hibarike@gmail.com" class="footer-email footer-style-light mobile-element">
+                <a href="mailto:hibarike@gmail.com" class="footer-email footer-style-light d-block d-md-none">
                     marianegelde@gmail.com
                 </a>
-                <div class="footer-links-wrapper tablet-element">
+                <div class="footer-links-wrapper d-none d-md-block d-xl-none">
                     <div class="footer-links ">
                         <a href="https://github.com/MartaLinux" class="links-git footer-icon" target="_blank"><i
                                 class="fab fa-github-square"></i></a>
@@ -736,7 +735,7 @@
                 </div>
                 
             </div>
-            <div class="tablet-element desktop-element">
+            <div class="d-none d-md-block d-xl-none d-none d-lg-block">
 
                 <div class="footer-callback ">
                     <a href="tel:+380635321377" class="footer-phone footer-style-dark ">
@@ -747,7 +746,7 @@
                     </a>
                 </div>
             </div>
-            <div class="desktop-element">
+            <div class="d-none d-lg-block">
                 <div class="footer-links ">
                         <a href="https://github.com/MartaLinux" class="links-git footer-icon" target="_blank"><i
                                 class="fab fa-github-square"></i></a>
@@ -1015,8 +1014,8 @@
                        <div class="swiper-pagination"></div>
                            
                        <!-- If we need navigation buttons -->
-                       <div class="swiper-button-prev tablet-element desktop-element"></div>
-                       <div class="swiper-button-next tablet-element desktop-element"></div>
+                       <div class="swiper-button-prev d-none d-md-block"></div>
+                       <div class="swiper-button-next d-none d-md-block"></div>
                            
                        <!-- If we need scrollbar -->
                        <div class="swiper-scrollbar"></div>
@@ -1226,8 +1225,8 @@
                         <div class="swiper-pagination"></div>
                             
                         <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev tablet-element desktop-element"></div>
-                        <div class="swiper-button-next tablet-element desktop-element"></div>
+                        <div class="swiper-button-prev  d-none d-md-block"></div>
+                        <div class="swiper-button-next  d-none d-md-block"></div>
                             
                         <!-- If we need scrollbar -->
                         <div class="swiper-scrollbar"></div>
@@ -1273,8 +1272,8 @@
                         <div class="swiper-pagination"></div>
                             
                         <!-- If we need navigation buttons -->
-                        <div class="swiper-button-prev tablet-element desktop-element"></div>
-                        <div class="swiper-button-next tablet-element desktop-element"></div>
+                        <div class="swiper-button-prev  d-none d-md-block"></div>
+                        <div class="swiper-button-next  d-none d-md-block"></div>
                             
                         <!-- If we need scrollbar -->
                         <div class="swiper-scrollbar"></div>
