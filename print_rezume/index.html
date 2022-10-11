@@ -7,6 +7,8 @@
     <title>My resume</title>
     <link rel="stylesheet" href="./сss/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
    <!-- <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
     <script src="js/jquery.responsive-dom.js"></script>-->
     <!--Подключение поддкржки медиа-запросов
@@ -14,44 +16,116 @@
     
 </head>
 
-<body>
+<body class="contaoner-fluid d-lg-flex" style="height:100%; width:100%;">
  <frameset>
    <frame src="content.html" name="CONTENT">
  </frameset>
 
         <!-- Main container -->
-        <div class="main-container">
+        <div class="main-container container-fluid">
             <!-- Side container  -->
-            <aside class="sidebar-container">
-                <div class="main-info-hiden">
-                    <h2 class="profession">{Junior_Developer}</h2>
-                    <h1 class="name">{MARTA TSYVANONOK}</h1>
+            <aside class="container" style="background: rgb(24, 24, 117);">
+                <div class="text-white text-center d-block d-lg-none" >
+                    <h4 class="text-sm  ">{Trainee_Developer}</h4>
+                    <h5 class="text-sm" style="color: rgb(59, 172, 210);">{MARTA TSYVANONOK}</h5>
 
-                    <p class="about-me-text"> /My goal: Start working as a developer of applications and sites.
+                    <p class="text-sm"> /My goal: Start working as a developer of applications and sites.
                         Ready to learn a new language.
                     </p>
                 </div>
-                <img class="my-photo"  src="https://i.ibb.co/C7hh023/photo-2022-03-09-17-42-51.jpg" alt="my photo">
+                <div class="text-center">
+                    <picture>
+                    
+                        <img src="./img/photo_2022-10-11_15-20-09.jpg" class=" rounded img-fluid img-thumbnail " 
+                        alt="..." style="width: 200px; height:100%">
+                    </picture>
+                </div>
+                
+                <!--<img class="my-photo"  src="./img/photo_2022-10-11_15-20-09.jpg" alt="my photo" style="width: ;">-->
                 <!-- side container text -->
-                <div class="sidebar-container-text">
+                <div class="container text-white p-4 d-flex flex-column">
                     <!-- contacts container -->
-                    <div class="contacts-container">
-                        <h3 class="contacts-title">Contacts</h3>
+                    <div class=" row ">
+
+                        <h3 class="contacts-title text-left " style= "color: rgb(59, 172, 210);">Contacts</h3>
                         <!-- telephune -->
-                        <div>
+                       <div class="col-6 col-sm-4">
                             <span class="contacts-link-type">C:</span> <a class="contacts-link" href="tel:+380635321377">+38 063 532 13 77</a>
                         </div>
                         <!-- Email -->
                         <div>
-                            <span class="contacts-link-type">E:</span> <a class="contacts-link" href="mailto:marianegelde@gmail.com">marianegelde@gmail.com</a>
+                            <span class="contacts-link-type text-center">E:</span> <a class="contacts-link" href="mailto:marianegelde@gmail.com">marianegelde@gmail.com</a>
                         </div>
                         <!-- Telegram -->
                         <div>
                             <span class="contacts-link-type">T:</span> <a class="contacts-link" href="https://t.me/M@rt@^_^" target="_blank">@Marta_Gelden</a>
                         </div>
+                    </div>    
                     </div>
                     <!-- Tech skills container -->
-                    <div class="skill-container">
+                    <div class="container text-white p-4 d-flex flex-column">
+                        <h3 class="skill-title" style="color: rgb(59, 172, 210);" >My Coding Skills</h3>
+                        <div class="row">
+                            <div class="col-6 col-sm-4">
+                                HTML5
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                CSS
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                JS
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                PYTHON_3
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                C++
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                AWS-LAMBDA
+                            </div>
+
+
+                            <!-- Force next columns to break to new line at md breakpoint and up -->
+                            <div class="w-100 d-none d-md-block"></div>
+
+                            <div class="col-6 col-sm-4">
+                                REST-API-GET-AWAY
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                COREZOID
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                Administration of Win\Linux operating systems
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                OOP CONCEPT
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                GIT
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                BOOTSTRAP_5
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <!--
+
+                    <div class="container">
                         <h3 class="skill-title" >My Coding Skills</h3>
                         <ul class="skills-item-list">
                             <li >
@@ -93,7 +167,72 @@
                             </li>
                         </ul>
                     </div>
+                    -->
                     <!-- Soft skills container -->
+                    <div class="container text-white text-sm d-flex flex-column ">
+                        <h3 class="skill-title" style="color: rgb(59, 172, 210);">Soft Skills</h3>
+                        <div class="row ">
+                            <div class="col-3 col-sm-4">
+                                Pre-Intermadiate English Level
+                            </div>
+
+                            <div class="col-3 col-sm-4">
+                                SQL
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                Network security basics
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                AWS
+                            </div>
+
+                             <!-- Force next columns to break to new line at md breakpoint and up -->
+                            <div class="w-100 d-none d-md-block"></div>
+
+                            <div class="col-6 col-sm-4">
+                                STRAPI
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                Development of a chat bot for corezoid
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                GOOGLE API'S
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                GOOGLE SHEETS
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                VIM
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                Postman
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                JSON
+                            </div>
+
+                            <div class="col-6 col-sm-4">
+                                Animations with 3DMax
+                            </div>
+
+                            
+
+
+                        </div>
+                    </div>
+
+
+
+
+                    <!--
                     <div class="skill-container">
                         <h3 class="skill-title">Soft Skills</h3>
                         <ul class="skills-item-list">
@@ -153,71 +292,78 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                    -->
+             
             </aside>
             
 
 
             <!-- about me container -->
             
-            <div class="about-me-container">
+            <div class="container">
                 <!-- About me main info -->
-                <div class="main-info">
-                    <h2 class="profession">{Junior_Developer}</h2>
-                    <h1 class="name">{MARTA TSYVANONOK}</h1>
+                <div class="main-info  d-none d-lg-block" >
+                    <h3 class="text-sm text-black">{Trainee_Developer}</h3>
+                    <h5 class="text-uppercase text-black">{MARTA TSYVANONOK}</h5 >
 
-                    <p class="about-me-text"> /My goal: Start working as a developer of applications and sites.
+                    <p class="text-sm text-center"> 
+                        /My goal: Start working as a developer<br>
+                         of applications and sites.<br>
                         Ready to learn a new language.
                     </p>
                 </div>
                 <div class="about-me-move-down">
                     <!-- Projects container -->
-                    <div class="project-container">
-                        <h3 class="about-me-headers">{My_Projects}</h3>
-                        
-                        <ol class="project-list">
-                            <li class="project-list-item">
-                                <a class="project-list-link" href="../01-cards-sources/index.html" target="_blank"> <span class="project-list-points"> _SLIDER[CLICK] : </span></a>
-                                
-                                [ <span class="project-list-types">HTML5, CSS, JavaScript</span> ]
-                            </li>
+                    
 
-                            <li class="project-list-item">
-                                <a class="project-list-link" href="../02-drag-n-drop-sources/index.html" target="_blank"><span class="project-list-points">_DRAG-N-DROP:</span></a>
-                                
-                                [ <span class="project-list-types">HTML5, CSS3, JavaScript</span> ]
-                            </li>
 
-                            <li class="project-list-item">
-                                <a class="project-list-link" href="../03-slider-sources/index.html" target="_blank"><span class="project-list-points">_SLIDER[WITH_BTN]:</span></a>
-                                
-                                [ <span class="project-list-types">HTML5, CSS3, JavaScript</span> ]
-                            </li>
+                    <div class="container d-flex flex-column bd-highlight mb-3">
+                        <h3 class="text-left" style="color: rgb(59, 172, 210);">{My_Projects}</h3>
+                        <div class="row">
+                            <ol class="project-list">
+                                <li class="project-list-item">
+                                    <a class="project-list-link" href="../01-cards-sources/index.html" target="_blank"> <span class="project-list-points"> _SLIDER[CLICK] : </span></a>
+                                    
+                                    [ <span class="project-list-types">HTML5, CSS, JavaScript</span> ]
+                                </li>
 
-                            <li class="project-list-item">
-                                <a class="project-list-link" href="../04-board-sources/index.html" target="_blank"><span class="project-list-points">_BOARD_PIXES:</span></a>
-                                
-                                [ <span class="project-list-types">HTML5, CSS3, JavaScript</span> ]
-                            </li>
+                                <li class="project-list-item">
+                                    <a class="project-list-link" href="../02-drag-n-drop-sources/index.html" target="_blank"><span class="project-list-points">_DRAG-N-DROP:</span></a>
+                                    
+                                    [ <span class="project-list-types">HTML5, CSS3, JavaScript</span> ]
+                                </li>
 
-                            <li class="project-list-item">
-                                <a class="project-list-link" href="../05-aim-game-sources/index.html" target="_blank"><span class="project-list-points">_CLICKER GAME:</span></a>
-                                
-                                [ <span class="project-list-types">HTML5, CSS3, JavaScript</span> ]
-                            </li>
+                                <li class="project-list-item">
+                                    <a class="project-list-link" href="../03-slider-sources/index.html" target="_blank"><span class="project-list-points">_SLIDER[WITH_BTN]:</span></a>
+                                    
+                                    [ <span class="project-list-types">HTML5, CSS3, JavaScript</span> ]
+                                </li>
 
-                            <li class="project-list-item">
-                                <a class="project-list-link" href="../index.html" target="_blank"><span class="project-list-points">_My Sait Rezume:</span></a>
+                                <li class="project-list-item">
+                                    <a class="project-list-link" href="../04-board-sources/index.html" target="_blank"><span class="project-list-points">_BOARD_PIXES:</span></a>
+                                    
+                                    [ <span class="project-list-types">HTML5, CSS3, JavaScript</span> ]
+                                </li>
+
+                                <li class="project-list-item">
+                                    <a class="project-list-link" href="../05-aim-game-sources/index.html" target="_blank"><span class="project-list-points">_CLICKER GAME:</span></a>
+                                    
+                                    [ <span class="project-list-types">HTML5, CSS3, JavaScript</span> ]
+                                </li>
+
+                                <li class="project-list-item">
+                                    <a class="project-list-link" href="../index.html" target="_blank"><span class="project-list-points">_My Sait Rezume:</span></a>
+                                    
+                                    [ <span class="project-list-types">HTML5, CSS3, JavaScript</span> ]
+                                </li>
                                 
-                                [ <span class="project-list-types">HTML5, CSS3, JavaScript</span> ]
-                            </li>
-                            
-                        </ol>
+                            </ol>
+                        </div>
                     
                     </div>
                     <!-- ABOUT ME experience container -->
-                    <div class="work-experience">
-                        <h3 class="about-me-headers">ABOUT ME</h3>
+                    <div class="work-experience d-flex flex-column bd-highlight mb-3">
+                        <h3 class="about-me-headers" style="color: rgb(59, 172, 210);">ABOUT ME</h3>
                         <!-- first ABOT ME -->
                         <div >
                             <h4 class="working-position">PYTHON_3<span class="working-place"></span> </h4>
@@ -412,7 +558,7 @@
             </div>   
             
         </div>
-   
+        </div>
    <!--<script>
     
        (function() {
