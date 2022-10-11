@@ -59,7 +59,7 @@ callbackFrom.addEventListener("submit", function(event){
 
     // send to google-docs
     var http = new XMLHttpRequest();
-        var url = "https://script.google.com/macros/s/AKfycbxayqS_tNkAhuWUMweh3qLfIBpvc54pJKaciT38aEiLNGYYM8OPCQO2UE8hvlyZFwoD/exec";
+        var url = "https://script.google.com/macros/s/AKfycbyYkojiHGeUC349nO9tTv2b7Cwi-GGZaRWpeGFzB5VpQI2qWzncGxYPexbn005cOt5W/exec";
         var params = "name="+userName.value.replace(/\s+/g,'')+"&email="+userEmail.value.replace(/\s+/g,'')+"&phone="+userPhone.value.replace(/\s+/g,'');
         http.open("GET", url+"?"+params, true);
         http.send();
